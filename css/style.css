@@ -1,0 +1,330 @@
+/* ========================
+* Theme Name: LEDP HOMEWORK
+* Theme URI: 
+* Author: TALIB (web learner)
+* Author URI: https://talib.netlify.com
+* Description: ledp homework with RASHED ZAMAN SIR
+* Version: 1.0
+* Tags: 
+* Text Domain: ledp-homework
+==========================*/
+/* ========================
+      !CSS INDEX
+===========================
+* Theme default css
+* header
+* hero
+* subscribe
+* featured
+* story
+* team
+* boats
+==========================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+section {
+  padding: 30px 0; }
+
+.section__inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px; }
+
+img {
+  height: 100%;
+  width: 100%; }
+
+.btn__primary {
+  font-size: 20px;
+  width: 150px;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  background: #22b1eb;
+  border: 1px solid transparent; }
+  .btn__primary a {
+    color: #fff;
+    text-decoration: none; }
+  .btn__primary:hover {
+    padding: 8px 30px;
+    background: transparent;
+    border: 1px solid #22b1eb; }
+    .btn__primary:hover a {
+      color: #22b1eb; }
+
+header {
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  background: #fcffff;
+  z-index: 9999999;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888; }
+  header .nav {
+    margin-top: -8px; }
+    header .nav__left {
+      float: left;
+      width: 30%;
+      margin-top: -15px; }
+      header .nav__left .logo img {
+        height: 60px;
+        width: 90px; }
+    header .nav__right {
+      float: left;
+      width: 70%;
+      text-align: right; }
+      header .nav__right ul {
+        list-style: none; }
+      header .nav__right li {
+        display: inline-block;
+        margin: 0 30px;
+        background: transparent;
+        border-radius: 50px; }
+        header .nav__right li a {
+          text-decoration: none;
+          display: block;
+          padding: 5px 20px;
+          font-size: 18px;
+          font-weight: bold;
+          color: #092e5b; }
+        header .nav__right li:hover {
+          background: #092e5b; }
+          header .nav__right li:hover a {
+            color: #fff; }
+
+/* ========================
+      !hero
+==========================*/
+#hero {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #092e5b, rgba(9, 46, 91, 0.7)), url("/img/hero-min.jpg");
+  background-position: right center;
+  background-size: cover; }
+
+.hero {
+  position: relative; }
+  .hero__content {
+    position: absolute;
+    top: 50%;
+    left: 405px;
+    transform: translate(-50%, -50%);
+    padding: 40px; }
+  .hero__title {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 10px; }
+
+/* ========================
+      !subscribe
+==========================*/
+#subscribe {
+  background: #092e5b;
+  height: 100px;
+  padding-bottom: 30px; }
+  #subscribe .section__inner {
+    padding: 0; }
+
+.subscribe__content {
+  color: #fff;
+  text-align: center;
+  font-size: 18px; }
+
+.subscribe__one, .subscribe__two, .subscribe__three {
+  width: 30%;
+  float: left;
+  margin: 10px; }
+  .subscribe__one i, .subscribe__two i, .subscribe__three i {
+    float: left;
+    margin-left: 100px;
+    font-size: 25px; }
+
+/* ========================
+      !featured
+==========================*/
+#featured {
+  height: 120vh; }
+  #featured .section__inner {
+    padding: 0; }
+
+.featured__content__one {
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: center; }
+  .featured__content__one--left {
+    width: 50%;
+    float: left;
+    margin-right: 70px; }
+  .featured__content__one--right {
+    width: 50%;
+    float: left;
+    text-align: center;
+    position: relative;
+    height: 450px; }
+    .featured__content__one--right::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background: rgba(9, 46, 91, 0.9);
+      height: 100%;
+      width: 100%;
+      z-index: 999;
+      opacity: 0.7;
+      transition: all 0.3s ease; }
+    .featured__content__one--right:hover:before {
+      opacity: 0; }
+
+.featured__content__two {
+  float: left;
+  height: 60vh; }
+  .featured__content__two--one, .featured__content__two--two, .featured__content__two--three {
+    width: 32.65%;
+    float: left; }
+  .featured__content__two--two {
+    margin: 0 10px;
+    position: relative; }
+
+.featured__before__title {
+  color: #656565;
+  font-size: 18px; }
+
+.featured__after__title {
+  color: #e49d64;
+  font-size: 18px;
+  margin-bottom: 15px; }
+
+.featured__title {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold; }
+
+.featured__text {
+  color: #656565;
+  font-size: 14px;
+  margin-bottom: 15px; }
+
+.featured__image {
+  height: 380px;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative; }
+  .featured__image::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(9, 46, 91, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    opacity: 0.7;
+    transition: all 0.3s ease; }
+  .featured__image:hover:before {
+    opacity: 0; }
+
+.featured__badge {
+  position: absolute;
+  background: #2cc187;
+  padding: 10px 30px;
+  color: #fff;
+  z-index: 99; }
+
+/* ========================
+      !story
+==========================*/
+#story {
+  height: 100vh;
+  background: #092e5b;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto; }
+  #story img {
+    height: 480px;
+    width: 800px; }
+  #story .section__inner {
+    width: 800px; }
+
+.story {
+  position: relative; }
+  .story__btn {
+    text-align: center;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%); }
+  .story__part__one .before__title {
+    margin: 25px 0 10px 0; }
+  .story__part__one .after__title {
+    font-size: 14px;
+    margin-bottom: 30px; }
+  .story__part__one .title {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 800; }
+
+/* ========================
+      ! 1. boats
+==========================*/
+#boats {
+  height: 100vh;
+  background: #f4fcff; }
+
+.boats {
+  text-align: center; }
+  .boats__part__one .before__title {
+    margin: 25px 0 10px 0;
+    color: #656565; }
+  .boats__part__one .after__title {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #656565; }
+  .boats__part__one .title {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 800; }
+  .boats__part__two--one, .boats__part__two--two, .boats__part__two--three {
+    width: 30%;
+    text-align: left;
+    background: #fff;
+    float: left;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
+    .boats__part__two--one .content__image, .boats__part__two--two .content__image, .boats__part__two--three .content__image {
+      height: 250px;
+      position: relative; }
+      .boats__part__two--one .content__image::before, .boats__part__two--two .content__image::before, .boats__part__two--three .content__image::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        background: rgba(9, 46, 91, 0.9);
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        opacity: 0.7;
+        transition: all 0.3s ease; }
+      .boats__part__two--one .content__image:hover:before, .boats__part__two--two .content__image:hover:before, .boats__part__two--three .content__image:hover:before {
+        opacity: 0; }
+    .boats__part__two--one .content__text, .boats__part__two--two .content__text, .boats__part__two--three .content__text {
+      margin: 30px 0;
+      padding: 0 20px; }
+      .boats__part__two--one .content__text i, .boats__part__two--two .content__text i, .boats__part__two--three .content__text i {
+        font-size: 30px;
+        color: #dd8138; }
+      .boats__part__two--one .content__text .heading, .boats__part__two--two .content__text .heading, .boats__part__two--three .content__text .heading {
+        margin: 10px 0;
+        font-size: 25px; }
+      .boats__part__two--one .content__text .info, .boats__part__two--two .content__text .info, .boats__part__two--three .content__text .info {
+        margin: 10px 0;
+        color: #656565; }
+      .boats__part__two--one .content__text a, .boats__part__two--two .content__text a, .boats__part__two--three .content__text a {
+        text-decoration: none;
+        color: #dd8138;
+        font-size: 18px; }
+  .boats__part__two--two {
+    margin: 0 20px; }

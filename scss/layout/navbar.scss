@@ -1,0 +1,52 @@
+header {
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    background: $navbar_color;
+    z-index: 9999999;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    .nav {
+        margin-top: -8px;
+        &__left {
+            float: left;
+            width: 30%;
+            margin-top: -15px;
+            .logo {
+                img {
+                    height: 60px;
+                    width: 90px;
+                }
+            }
+        }
+        &__right {
+            float: left;
+            width: 70%;
+            text-align: right;
+            ul {
+                list-style: none;
+            }
+            li {
+                display: inline-block;
+                margin: 0 30px;
+                background: transparent;
+                border-radius: 50px;
+                a {
+                    text-decoration: none;
+                    display: block;
+                    padding: 5px 20px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: $theme_color_primary;
+                }
+                &:hover {
+                    background: $theme_color_primary;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

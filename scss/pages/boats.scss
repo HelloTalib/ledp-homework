@@ -1,0 +1,77 @@
+/* ========================
+      ! 1. boats
+==========================*/
+#boats {
+    height: 100vh;
+    background: $theme_color_tertiary;
+}
+.boats {
+    text-align: center;
+    &__part__one {
+        .before__title {
+            margin: 25px 0 10px 0;
+            color: $text_color_primary;
+        }
+        .after__title {
+            font-size: 14px;
+            margin-bottom: 30px;
+            color: $text_color_primary;
+        }
+        .title {
+            font-size: 35px;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+    }
+    &__part__two {
+        &--one,
+        &--two,
+        &--three {
+            width: 30%;
+            text-align: left;
+            background: #fff;
+            float: left;
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+            .content {
+                &__image {
+                    height: 250px;
+                    position: relative;
+                    &::before {
+                        @include animation_before;
+                    }
+                    &:hover {
+                        &:before {
+                            opacity: 0;
+                        }
+                    }
+                }
+                &__text {
+                    margin: 30px 0;
+                    padding: 0 20px;
+                    i {
+                        font-size: 30px;
+                        color: $text_color_secondary;
+                    }
+                    .heading {
+                        margin: 10px 0;
+                        font-size: 25px;
+                    }
+                    .info {
+                        margin: 10px 0;
+                        color: $text_color_primary;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $text_color_secondary;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        &--two {
+            margin: 0 20px;
+        }
+    }
+}

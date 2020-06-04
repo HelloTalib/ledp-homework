@@ -1,0 +1,30 @@
+/* ========================
+      !subscribe
+==========================*/
+#subscribe {
+    background: $theme_color_primary;
+    height: 100px;
+    padding-bottom: 30px;
+    .section__inner {
+        padding: 0;
+    }
+}
+.subscribe {
+    &__content {
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+    }
+    &__one,
+    &__two,
+    &__three {
+        width: 30%;
+        float: left;
+        margin: 10px;
+        i {
+            float: left;
+            margin-left: 100px;
+            font-size: 25px;
+        }
+    }
+}

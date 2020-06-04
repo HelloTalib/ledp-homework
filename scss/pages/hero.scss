@@ -1,0 +1,30 @@
+/* ========================
+      !hero
+==========================*/
+#hero {
+    height: 100vh;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba($color: $theme_color_primary, $alpha: 1),
+            rgba($color: $theme_color_primary, $alpha: 0.7)
+        ),
+        url("/img/hero-min.jpg");
+    background-position: right center;
+    background-size: cover;
+}
+.hero {
+    position: relative;
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 405px;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+    }
+    &__title {
+        font-size: 35px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+}

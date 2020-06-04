@@ -1,0 +1,93 @@
+/* ========================
+      !featured
+==========================*/
+#featured {
+    height: 120vh;
+    .section__inner {
+        padding: 0;
+    }
+}
+.featured {
+    &__content {
+        &__one {
+            display: flex;
+            height: 60vh;
+            align-items: center;
+            justify-content: center;
+            &--left {
+                width: 50%;
+                float: left;
+                margin-right: 70px;
+            }
+            &--right {
+                width: 50%;
+                float: left;
+                text-align: center;
+                position: relative;
+                height: 450px;
+                &::before {
+                    @include animation_before;
+                }
+                &:hover {
+                    &:before {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        &__two {
+            float: left;
+            height: 60vh;
+            &--one,
+            &--two,
+            &--three {
+                width: 32.65%;
+                float: left;
+            }
+            &--two {
+                margin: 0 10px;
+                position: relative;
+            }
+        }
+    }
+    &__before__title {
+        color: $text_color_primary;
+        font-size: 18px;
+    }
+    &__after__title {
+        color: lighten($color: $text_color_secondary, $amount: 10);
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    &__title {
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__text {
+        color: $text_color_primary;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    &__image {
+        height: 380px;
+        text-align: center;
+        margin-bottom: 10px;
+        position: relative;
+        &::before {
+            @include animation_before;
+        }
+        &:hover {
+            &:before {
+                opacity: 0;
+            }
+        }
+    }
+    &__badge {
+        position: absolute;
+        background: $featured_color;
+        padding: 10px 30px;
+        color: #fff;
+        z-index: 99;
+    }
+}
